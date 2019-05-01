@@ -24,7 +24,7 @@
 
 <head>
 
-<title>Organizations</title>
+<title>Lucy Hwang</title>
 <link rel="shortcut icon" href="https://66.media.tumblr.com/tumblr_lkl5ueZCY01qfamg6.gif">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
@@ -33,7 +33,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 12px;
     background: url(https://ncscolour.com/wp-content/uploads/2016/04/tempcolorimg-1439.jpg); /*body background*/
     font-family: Helvetica; /*body font*/
 }
@@ -71,6 +71,12 @@ table {
     padding: 5px;
 }
 
+table2 {
+    width: 600px;
+    height: 200px;
+    position: fixed;
+    padding: 5px;
+}
 #color-one {
     background: #ECFFB0; /*first tiny box color*/
 }
@@ -90,17 +96,31 @@ table {
     width: 387px;
     text-align: right;
     margin-top: 125px;
-    letter-spacing: 0px;
+    letter-spacing: -5px;
     font-weight: bold;
 }
 
+#top img {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
 
+#bottom {
+    width: 600px;
+    height: 200px;
+    background: #ffffff; /*bottom bar background color*/
+    margin-top: 10px;
+}
 
-#usit {
+#linkusit {
+    margin-top: 210px;
     width: 120px;
     height: 120px;
+    padding: 20px;
     border: 20px solid #ECFFB0; /*links border color*/
     overflow: auto;
+    background: #ffffff; /*links box background color*/
     font-size: 11px;
     text-transform: lowercase;
     letter-spacing: 5px;
@@ -109,47 +129,79 @@ table {
     position: fixed;
     text-align: center;
 }
-
-#usitcontent
-{
-    width: 440px;
-    height: 160px;
-    margin-left: 160px;
-    background: #ECFFB0;
-    color: #7a8ccdck; /*content font color*/
-    overflow: auto;
-    text-align: justify;
-        line-height: 14px;
-    font-size: 13px;
-    font: Helvetica;
-}
-
-#kappas {
+#linkkappas {
+    margin-top: 210px;
+    margin-left:200px;
     width: 120px;
     height: 120px;
-    border: 20px solid #578c98; /*links border color*/
+    padding: 20px;
+    border: 20px solid #ECFFB0; /*links border color*/
     overflow: auto;
+    background: #ffffff; /*links box background color*/
     font-size: 11px;
     text-transform: lowercase;
     letter-spacing: 5px;
-    line-height: 20px;
+    line-height: 25px;
     font-style: italic;
     position: fixed;
     text-align: center;
 }
 
-#kappascontent
+#linkconv {
+    margin-top: 210px;
+    margin-left:400px;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    border: 20px solid #ECFFB0; /*links border color*/
+    overflow: auto;
+    background: #ffffff; /*links box background color*/
+    font-size: 11px;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    line-height: 100px;
+    font-style: italic;
+    position: fixed;
+    text-align: center;
+}
+#links a {
+    color: #414349; /*link color*/
+}
+
+#links a:hover {
+    color: #ECFFB0; /*hover link color*/
+}
+
+#content
 {
-    width: 440px;
+    width: 360px;
     height: 160px;
-    margin-left: 160px;
-    background: #578c98;
+    margin-left: 200px;
     color: #7a8ccdck; /*content font color*/
     overflow: auto;
+    position: fixed;
+    padding: 20px;
     text-align: justify;
         line-height: 14px;
-    font-size: 13px;
-    font: Helvetica;
+    font-size: 11px;
+}
+
+#navigation {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 8px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#navigation a {
+    letter-spacing: 2px;
+    color: #414349; /*navigation link color*/
+    font-weight: bold;
+}
+
+#navigation a:hover {
+    color: #ECFFB0; /*hover navigation link color*/
 }
 
 ::-webkit-scrollbar {
@@ -168,7 +220,7 @@ table {
     width: 55px;
     height: 18px;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 7px;
     text-transform: uppercase;
     text-align: center;
     bottom: 10px;
@@ -214,30 +266,30 @@ table {
 <td id="color-three"></td>
 </tr>
 </table>
-
-	<div id="title"><div align="center"><!--title-->organizations. </div></div>
+<table2>
+<tr>
+<td id="linkusit"></td>
+<td id="linkkappas"></td>
+<td id="linkconv"></td>
+</tr>
+</table2>
+<div id ="linkusit">
+   <a href="usit.html"/>  <font color = "#a1bebf"> The University Securities Investment Team </font></a>
 </div>
 
-<div id="usit">
-<img src="https://i.imgur.com/bQIVFXL.jpg?1" width="120" height="120"/>
+<div id ="linkkappas">
+   <a href="kappas.html"/>  <font color = "#a1bebf"> Kappa Phi Lambda Sorority Incorporated </font></a>
+</div>
+<div id ="linkconv">
+   <a href="conv.html"/>  <font color = "#a1bebf"> Convergent </font></a>
 </div>
 
-<div id="usitcontent">
-  <p> <font color = #000000> <b>Org</b> University Securities Investment Team </font> </p>
-  <p> <font color = #000000> <b>Position</b> Analytics Chair </font> </p>
-  <p> Kappa Phi Lambda...
-	</p>
-</div>
-<div id="kappas">
-<img src="https://i.imgur.com/TjWtsww.jpg?1" width="120" height="120"/>
+<div id="title"><!--title-->organizations.</div>
+<!--change your image here-->
 </div>
 
-<div id="kappascontent">
-<p> <font color = #ffffff> <b>Org</b> Kappa Phi Lambda Sorority Incorporated </font> </p>
-  <p> <font color = #ffffff> <b>Position</b> Academics Chair </font> </p>
-  <p> The University Securities Investment Team...
-	</p>
-</div>
+<div id="bottom">
+    
 
 </div>
 
